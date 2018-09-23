@@ -19,8 +19,8 @@
 
             <div class="subheading mb-3 text-xs-center">
               <font class="mainhdr">
-                Presents you with best
-                events. Join the TechFest 2018
+                Presents you with best events <br>
+                Join the TechFest 2018
               </font>
 
             </div>

@@ -2,7 +2,9 @@
   <v-app>
     <v-toolbar
       app
-      :clipped-left="clipped"
+      flat
+      dense
+      scroll-off-screen
     >
       <v-toolbar-title><font style="font-family: 'Redressed; font-size: 2rem;'">{{title}}</font></v-toolbar-title>
     </v-toolbar>
