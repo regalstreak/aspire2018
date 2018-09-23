@@ -1,14 +1,15 @@
 <template>
   <v-layout column>
      <section>
-        <v-parallax src="http://127.0.0.1:33685/assets/hero.jpeg" height="600">
+        <v-parallax :src="`${baseUrl}parallax/hero.jpeg`" height="600">
+
           <v-layout
             column
             align-center
             justify-center
             class="white--text"
           >
-            <img src="http://127.0.0.1:33685/assets/vuetify.png" alt="Vuetify.js" height="200">
+            <img :src="`${baseUrl}parallax/vuetify.png`" alt="Vuetify.js" height="200">
             
             <h2 class="white--text mb-2 display-1 text-xs-center">
               <font class="itsa">
@@ -99,7 +100,7 @@
       </section>
 
       <section>
-        <v-parallax src="http://127.0.0.1:33685/assets/section.jpg" height="380">
+        <v-parallax :src="`${baseUrl}parallax/section.jpg`" height="380">
           <v-layout column align-center justify-center>
             <div class="headline white--text mb-3 text-xs-center">Web development has never been easier</div>
             <em>Kick-start your application today</em>
@@ -171,6 +172,17 @@
       </section>
   </v-layout>
 </template>
+
+<script>
+export default {
+  computed: {
+    baseUrl: () => {
+      return process.env.BASE_URL;
+    }
+  }
+};
+</script>
+
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
