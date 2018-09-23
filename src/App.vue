@@ -6,6 +6,7 @@
       dense
       scroll-off-screen
       :color="updateToolbarScrollColor()"
+      :scroll-threshold="70"
     >
       <v-toolbar-title><font style="font-family: 'Redressed; font-size: 2rem;'">{{title}}</font></v-toolbar-title>
     </v-toolbar>

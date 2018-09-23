@@ -1,7 +1,7 @@
 <template>
   <v-layout column>
      <section>
-        <v-parallax :src="`${baseUrl}parallax/hero.jpeg`" height="600">
+        <v-parallax :src="`${baseUrl}parallax/hero.jpeg`" :height="windowHeight">
 
           <v-layout
             column
@@ -178,6 +178,9 @@ export default {
   computed: {
     baseUrl: () => {
       return process.env.BASE_URL;
+    },
+    windowHeight: () => {
+      return window.innerHeight;
     }
   }
 };
